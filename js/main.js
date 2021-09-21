@@ -1,6 +1,6 @@
 /*----- constants -----*/
 const playerPiece = {
-    'null' : 'translucent',
+    'null' : 'lightslategrey',
     '1' : 'blue',
     '-1': 'red',
 } 
