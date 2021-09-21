@@ -1,8 +1,8 @@
 /*----- constants -----*/
 const playerPiece = {
     'null' : 'lightslategrey',
-    '1' : 'blue',
-    '-1': 'red',
+    '1' : 'darkseagreen',
+    '-1': 'ivory',
 } 
 
 // playerPiece.style.fontSize = large;
@@ -54,13 +54,12 @@ function init() {
     winner = null;
     turn = 1;
     render();
-    // locationEls.style.backgroundColor = 'none';
 }
 
- function render() {
-        renderBoard();
-        renderMsg();
-        btnEl.style.visibility = winner ? 'visible' : 'hidden';
+function render() {
+    renderBoard();
+    renderMsg();
+    btnEl.style.visibility = winner ? 'visible' : 'hidden';
 }
 
 function playerChoice(evt) {
@@ -76,8 +75,8 @@ function playerChoice(evt) {
 
 function renderBoard() {
     // change piece color based on click
-        board.forEach(function(cell, index) {
-            locationEls[index].style.backgroundColor = playerPiece[cell];
+    board.forEach(function(cell, index) {
+        locationEls[index].style.backgroundColor = playerPiece[cell];
     });
 }
 

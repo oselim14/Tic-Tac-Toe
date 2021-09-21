@@ -23,25 +23,33 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 10vmin);
   grid-template-rows: repeat(3, 10vmin);
-  /* background: black; */
 }
 
 #board > div {
     position: relative;
     text-align: center;  
     text-justify: center;
-    /* border:0.5vmin solid black; */
 }
 button {
-    margin-top: 10px;
-    background-color: white;
+    margin-top: 30px;
+    background-color: lightgray;
+    border-radius: 12px;
+    border: slategray;
+    font-size: 20px;
+    box-shadow: 5px 5px grey;
+}
+button:hover{
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(62, 109, 157);
+  color: white;
 }
 
 #board > div:hover {
   transform: scale(1.1);
   transition: all 0.2s ease-in;
-  background-color: slategrey;
-  border: 0;
+  border: 0.25vmin solid slategray;
+  box-shadow: 5px 10px slategray
 }
 
 div.top {
@@ -60,6 +68,4 @@ div.left {
   border-left: 0;
   border-right: 0.5vmin solid black;
 }
-/* div.true {
-  border: 0.5vmin solid black;
-} */
+
